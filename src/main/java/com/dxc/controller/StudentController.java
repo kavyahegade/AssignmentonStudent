@@ -21,7 +21,7 @@ public class StudentController {
 	StudentServiceImpl service;
 	
 	
-	@GetMapping("/students")
+	@GetMapping("/all")
     public List<Student> getAllStudent(){
         return service.getAllStudent();
 
@@ -35,13 +35,13 @@ public class StudentController {
 
 	}
 
-    @PostMapping("/student")
+    @PostMapping("/add")
    public Student insertStudent(@RequestBody Student s) {
         return service.insertStudent(s);
 
 	}
 
-   @PutMapping("/students")
+   @PutMapping("/update")
    public Student updateStudentDetails(@RequestBody Student s) {
           return service.updateStudent(s);
 

@@ -8,7 +8,7 @@ import javax.persistence.Id;
 public class Student {
 	@Id
 	@GeneratedValue()
-	int id;
+	private int id;
 	String first_name;
 	String last_name;
 	String email;
